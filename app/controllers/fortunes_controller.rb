@@ -1,26 +1,6 @@
 class FortunesController < ApplicationController
 
   def horoscopes
-    # all_zodiacs = Zodiac.list.with_indifferent_access
-    # all_signs = params.fetch(:the_sign)
-    # all_signs = all_zodiacs.keys
-
-    # @array_of_signs = Array.new
-    # @array_of_horoscopes = Array.new
-
-
-    # 12.times do
-
-    #   @this_zodiac = all_signs.at(:name)
-    #   @horoscope = all_signs.fetch(:horoscope)
-
-    #   @array_of_signs.push(this_zodiac)
-    #   @array_of_horoscopes.push(horoscope)
-
-    # end
-
-    # @this_zodiac = all_zodiacs.fetch(:aries)[1]
-    # @horoscope = all_zodiacs.fetch(:aries)[2]
 
     all_zodiacs = Zodiac.list
 
