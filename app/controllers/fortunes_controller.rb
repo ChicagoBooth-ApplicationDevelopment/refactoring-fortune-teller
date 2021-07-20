@@ -6,16 +6,8 @@ class FortunesController < ApplicationController
 
     @this_zodiac = params.fetch("the_sign")
 
-    @all_signs = all_zodiacs.keys
-
-    counter = 0
-    
-    while counter < @all_signs.length
-      @signs_to_sym = all_zodiacs.fetch(@this_zodiac.to_sym)
-      @horoscopes = @signs_to_sym.fetch(:horoscope)
-
-      counter = counter + 1
-    end
+    @signs_to_sym = all_zodiacs.fetch(@this_zodiac.to_sym)
+    @horoscopes = @signs_to_sym.fetch(:horoscope)
 
     @array_of_lucky_numbers = Array.new
 
