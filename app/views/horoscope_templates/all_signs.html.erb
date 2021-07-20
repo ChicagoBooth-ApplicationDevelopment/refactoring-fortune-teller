@@ -1,0 +1,17 @@
+<h1>
+  <%=@this_zodiac.capitalize%>
+</h1>
+
+<div><dt><%=@horoscopes%></dt></div>
+
+<div><p>Your lucky numbers today are:</p></div>
+
+<ul>
+  <%@array_of_lucky_numbers.each do |a_num|%>
+    <li>
+      <%=a_num%>
+    </li>
+  <%end%>
+</ul>
+
+
